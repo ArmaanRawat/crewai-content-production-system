@@ -87,6 +87,21 @@ class ContentResponse(BaseModel):
         description="ISO-8601 UTC timestamp of when the job completed.",
     )
 
+    quality_score: Optional[float] = Field(
+        default=None,
+        description="Aggregated Quality Gate score (0-100).",
+    )
+
+    quality_passed: Optional[bool] = Field(
+        default=None,
+        description="True if article passed all quality gate checks.",
+    )
+
+    quality_reasons: Optional[list[str]] = Field(
+        default=None,
+        description="Detailed list of fail reasons or warnings.",
+    )
+
     error: Optional[str] = Field(
         default=None,
         description="Error message if the pipeline failed.",
