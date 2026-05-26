@@ -45,11 +45,11 @@ def build_writer_agent() -> Agent:
 
         tools=[],  # Writer uses no external tools — only the research passed to it
 
-        llm="gemini/gemini-3.5-flash",
+        llm="gemini/gemini-2.0-flash-lite",  # gemini-3.5-flash is too expensive
 
         verbose=True,
         allow_delegation=False,
-        max_iter=3,
+        max_iter=2,
         memory=False,
     )
 

@@ -15,47 +15,36 @@ PROCESS TYPES:
 """
 
 from crewai import Crew, Process
-from tasks import build_research_task, build_writing_task
+from tasks import build_research_task, build_writing_task, build_editing_task, build_seo_task, build_fact_check_task
 from utils.logger import get_logger
 
 logger = get_logger(__name__)
 
 
-def build_content_crew(
-    topic: str,
-    tone: str,
-    word_count: int,
-    audience: str,
-) -> Crew:
-    """
-    Builds and returns the content production crew.
-
-    Args:
-        topic:       What to research and write about
-        tone:        Writing tone (professional/casual/etc)
-        word_count:  Target article length
-        audience:    Who the article is for
-
-    Returns:
-        A configured crewai.Crew ready to run
-    """
+def build_content_crew(topic, tone, word_count, audience) -> Crew:
     logger.info("Building Content Crew", topic=topic)
 
-    # ── Build tasks (agents are embedded inside tasks) ────────────────────────
     research_task = build_research_task(topic, audience)
     writing_task  = build_writing_task(topic, tone, word_count, audience)
-
-    # ── Assemble the crew ─────────────────────────────────────────────────────
+    editing_task  = build_editing_task(topic, tone, audience)
+    seo_task      = build_seo_task(topic, audience)
+    fact_check_task = build_fact_check_task(topic)  
     crew = Crew(
         agents=[
-            research_task.agent,   # Researcher
-            writing_task.agent,    # Writer
+            research_task.agent,
+            writing_task.agent,
+            editing_task.agent,
+            seo_task.agent,
+            fact_check_task.agent,
         ],
         tasks=[
-            research_task,         # runs first
-            writing_task,          # runs second, gets research output automatically
+            research_task,   # runs first
+            writing_task,    # runs second
+            editing_task,    # runs third
+            seo_task,        # runs fourth
+            fact_check_task, # runs fifth
         ],
-        process=Process.sequential,  # one task at a time, in order
+        process=Process.sequential,
         verbose=True,
     )
 
@@ -81,3 +70,4 @@ def run_content_crew(
 
     logger.info("Content Crew finished", topic=topic)
     return str(result)
+

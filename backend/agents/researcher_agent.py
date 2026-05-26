@@ -76,13 +76,13 @@ def build_researcher_agent() -> Agent:
         tools=[tavily_tool],
 
         # ── LLM config ───────────────────────────────────────────────────────
-        llm="gemini/gemini-3.5-flash",
+        llm="gemini/gemini-2.0-flash-lite",
     
 
         # ── Behaviour flags ───────────────────────────────────────────────────
         verbose=True,        # logs agent's thought process — great for debugging
         allow_delegation=False,  # researcher stays focused, doesn't hand off
-        max_iter=5,          # max reasoning iterations before giving up
+        max_iter=3,          # max reasoning iterations before giving up
         memory=False,        # no cross-run memory in Phase 1
     )
 
