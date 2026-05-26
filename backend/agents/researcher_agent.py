@@ -24,6 +24,7 @@ from dotenv import load_dotenv
 
 
 from utils.logger import get_logger
+from utils.helpers import get_llm
 
 load_dotenv()
 os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY", "")
@@ -76,7 +77,7 @@ def build_researcher_agent() -> Agent:
         tools=[tavily_tool],
 
         # ── LLM config ───────────────────────────────────────────────────────
-        llm="gemini/gemini-2.0-flash-lite",
+        llm=get_llm(),
     
 
         # ── Behaviour flags ───────────────────────────────────────────────────

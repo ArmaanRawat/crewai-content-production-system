@@ -25,8 +25,14 @@ def sse_sink(message):
     Loguru sink that broadcasts log messages to all registered SSE queues.
     """
     record = message.record
+    message_str = record['message']
+    
+    # Filter out polling HTTP requests from cluttering the live agent terminal
+    if record['name'] == "uvicorn.access" or any(endpoint in message_str for endpoint in ["/api/v1/jobs", "/api/v1/health", "/api/v1/logs/stream"]):
+        return
+        
     # Clean formatting for web console
-    formatted = f"{record['time'].strftime('%Y-%m-%d %H:%M:%S')} | {record['level'].name:8} | {record['name']}:{record['line']} - {record['message']}\n"
+    formatted = f"{record['time'].strftime('%Y-%m-%d %H:%M:%S')} | {record['level'].name:8} | {record['name']}:{record['line']} - {message_str}\n"
     
     with _lock:
         for q in list(_listeners):

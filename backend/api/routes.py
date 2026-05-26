@@ -9,7 +9,7 @@ real-time log streaming, and automated technical documentation.
 import time
 import asyncio
 from pathlib import Path
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, BackgroundTasks
 from fastapi.responses import StreamingResponse
 
 from schemas import ContentBriefRequest, ContentResponse
@@ -44,8 +44,32 @@ def _execute_pipeline(brief: ContentBriefRequest):
     return article, gate_res
 
 
+def run_pipeline_background(job_id: str, brief: ContentBriefRequest, created_at: str, start_time: float):
+    """
+    Background runner that executes the blocking pipeline,
+    updates job_store, and logs progress.
+    """
+    try:
+        article, gate_res = _execute_pipeline(brief)
+        elapsed = elapsed_seconds(start_time)
+        logger.info("Job complete", job_id=job_id, elapsed=elapsed)
+
+        word_count = len(article.split())
+        job_store.update_job_success(
+            job_id=job_id,
+            article=article,
+            word_count=word_count,
+            quality_score=gate_res.score,
+            quality_passed=gate_res.passed,
+            quality_reasons=gate_res.reasons
+        )
+    except Exception as e:
+        logger.error("Job failed in background", job_id=job_id, error=str(e))
+        job_store.update_job_failure(job_id, str(e))
+
+
 @router.post("/generate", response_model=ContentResponse)
-async def generate_content(brief: ContentBriefRequest):
+async def generate_content(brief: ContentBriefRequest, background_tasks: BackgroundTasks):
     """
     Kick off the content pipeline and evaluate via Quality Gate.
     Registers job state before execution and updates it upon completion.
@@ -67,45 +91,21 @@ async def generate_content(brief: ContentBriefRequest):
     )
     job_store.add_job(job_id, "running", created_at, store_brief)
 
-    try:
-        # Run blocking code in a separate thread
-        loop = asyncio.get_event_loop()
-        article, gate_res = await loop.run_in_executor(
-            None,
-            _execute_pipeline,
-            brief
-        )
+    # Add pipeline execution to background tasks
+    background_tasks.add_task(
+        run_pipeline_background,
+        job_id,
+        brief,
+        created_at,
+        start
+    )
 
-        elapsed = elapsed_seconds(start)
-        logger.info("Job complete", job_id=job_id, elapsed=elapsed)
-
-        # Update success in job store
-        word_count = len(article.split())
-        job_store.update_job_success(
-            job_id=job_id,
-            article=article,
-            word_count=word_count,
-            quality_score=gate_res.score,
-            quality_passed=gate_res.passed,
-            quality_reasons=gate_res.reasons
-        )
-
-        return ContentResponse(
-            job_id=job_id,
-            status="success",
-            topic=brief.topic,
-            article=article,
-            word_count=word_count,
-            quality_score=gate_res.score,
-            quality_passed=gate_res.passed,
-            quality_reasons=gate_res.reasons,
-            created_at=created_at,
-        )
-
-    except Exception as e:
-        logger.error("Job failed", job_id=job_id, error=str(e))
-        job_store.update_job_failure(job_id, str(e))
-        raise HTTPException(status_code=500, detail=str(e))
+    return ContentResponse(
+        job_id=job_id,
+        status="running",
+        topic=brief.topic,
+        created_at=created_at,
+    )
 
 
 @router.get("/jobs")

@@ -16,6 +16,7 @@ from crewai import Agent
 from crewai_tools import TavilySearchTool as CrewAITavilyTool
 from dotenv import load_dotenv
 from utils.logger import get_logger
+from utils.helpers import get_llm
 
 load_dotenv()
 logger = get_logger(__name__)
@@ -50,7 +51,7 @@ def build_fact_checker_agent() -> Agent:
 
         tools=[tavily_tool],  # needs search to verify claims
 
-        llm="gemini/gemini-2.0-flash-lite",
+        llm=get_llm(),
 
         verbose=True,
         allow_delegation=False,

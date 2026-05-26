@@ -15,6 +15,7 @@ import os
 from crewai import Agent
 from dotenv import load_dotenv
 from utils.logger import get_logger
+from utils.helpers import get_llm
 
 load_dotenv()
 logger = get_logger(__name__)
@@ -46,7 +47,7 @@ def build_editor_agent() -> Agent:
 
         tools=[],  # Editor works only on the text passed to it
 
-        llm="gemini/gemini-2.0-flash-lite",
+        llm=get_llm(),
 
         verbose=True,
         allow_delegation=False,
