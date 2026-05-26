@@ -2,7 +2,8 @@
 
 .app-container {
   display: flex;
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 100vh;
   background-color: var(--bg-deep);
   position: relative;
   overflow: hidden;
@@ -45,6 +46,8 @@
   flex-direction: column;
   padding: 2rem 1.5rem;
   z-index: 10;
+  height: 100%;
+  overflow-y: auto;
 }
 
 .logo-section {
@@ -167,6 +170,7 @@
   z-index: 5;
   overflow-y: auto;
   max-width: calc(100% - 280px);
+  height: 100%;
 }
 
 .header-bar {
@@ -721,5 +725,197 @@ tr:hover td {
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(245, 158, 11, 0);
+  }
+}
+
+/* Active Generation Status Dashboard styles */
+.active-crew-card {
+  margin-bottom: 2.5rem;
+  border: 1px solid rgba(157, 78, 223, 0.25);
+  box-shadow: 0 8px 30px rgba(157, 78, 223, 0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.active-crew-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(to bottom, var(--primary), var(--accent));
+}
+
+.active-crew-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1.5rem;
+}
+
+.active-crew-title {
+  margin: 0.5rem 0 0 0;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+/* Pipeline Visualization */
+.pipeline-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+
+.pipeline-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  min-width: 110px;
+  flex: 1;
+}
+
+.pipeline-bubble {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #1f2937;
+  border: 2px solid #374151;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  z-index: 2;
+}
+
+.pipeline-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  margin-top: 0.75rem;
+  transition: color 0.3s ease;
+}
+
+.pipeline-desc {
+  font-size: 0.65rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+  max-width: 100px;
+}
+
+.pipeline-connector {
+  flex-grow: 1;
+  height: 2px;
+  background: #374151;
+  margin-top: -30px; /* Aligns line vertically with bubble centers */
+  position: relative;
+  z-index: 1;
+  transition: background 0.3s ease;
+  min-width: 15px;
+}
+
+/* Pipeline States styles */
+.pipeline-step.completed .pipeline-bubble {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: var(--success);
+  color: var(--success);
+  box-shadow: 0 0 10px rgba(16, 185, 129, 0.2);
+}
+
+.pipeline-step.completed .pipeline-label {
+  color: var(--success);
+}
+
+.pipeline-step.active .pipeline-bubble {
+  background: rgba(157, 78, 223, 0.2);
+  border-color: var(--primary);
+  color: #fff;
+  font-size: 1rem;
+  transform: scale(1.15);
+  box-shadow: 0 0 15px var(--primary-glow);
+  animation: pulseActive 1.8s infinite;
+}
+
+.pipeline-step.active .pipeline-label {
+  color: #fff;
+}
+
+.pipeline-step.pending .pipeline-bubble {
+  background: #111827;
+  border-color: rgba(255, 255, 255, 0.05);
+  color: var(--text-muted);
+}
+
+.pipeline-connector.completed {
+  background: var(--success);
+}
+
+.pipeline-connector.active {
+  background: linear-gradient(to right, var(--success), var(--primary));
+}
+
+/* Micro console for active running job preview */
+.micro-console {
+  background: #050608;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: #a5b4fc;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.micro-console-header {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  padding-bottom: 0.2rem;
+}
+
+.micro-console-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.micro-console-line {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #38bdf8;
+}
+
+.micro-console-line.text-muted {
+  color: var(--text-muted);
+}
+
+/* Keyframes for animations */
+@keyframes pulseActive {
+  0% {
+    box-shadow: 0 0 0 0 rgba(157, 78, 223, 0.6);
+  }
+  70% {
+    box-shadow: 0 0 0 8px rgba(157, 78, 223, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(157, 78, 223, 0);
   }
 }
