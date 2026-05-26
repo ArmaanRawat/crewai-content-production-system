@@ -22,9 +22,11 @@ from crewai import Agent
 from crewai_tools import TavilySearchTool as CrewAITavilyTool
 from dotenv import load_dotenv
 
+
 from utils.logger import get_logger
 
 load_dotenv()
+os.environ["GEMINI_API_KEY"] = os.getenv("GEMINI_API_KEY", "")
 
 logger = get_logger(__name__)
 
@@ -74,7 +76,8 @@ def build_researcher_agent() -> Agent:
         tools=[tavily_tool],
 
         # ── LLM config ───────────────────────────────────────────────────────
-        llm=os.getenv("OPENAI_MODEL", "gpt-4o"),
+        llm="gemini/gemini-3.5-flash",
+    
 
         # ── Behaviour flags ───────────────────────────────────────────────────
         verbose=True,        # logs agent's thought process — great for debugging
