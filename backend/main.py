@@ -31,4 +31,18 @@ app.add_middleware(
 
 app.include_router(router, prefix="/api/v1")
 
-logger.info("App started", host="0.0.0.0", port=8000)
+
+@app.on_event("startup")
+def startup_event():
+    """
+    Runs startup processes including automated technical documentation generation.
+    """
+    logger.info("Server startup: auto-generating technical documentation")
+    try:
+        from utils.doc_generator import generate_docs
+        generate_docs()
+    except Exception as e:
+        logger.error(f"Failed to auto-generate technical documentation: {e}")
+
+
+logger.info("App started", host="0.0.0.0", port=8000)

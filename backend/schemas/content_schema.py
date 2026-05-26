@@ -55,3 +55,13 @@ class ContentBriefRequest(BaseModel):
         max_length=200,
         description="Who the content is written for.",
     )
+
+    seo_keywords: list[str] = Field(
+        default=[],
+        description="Target keywords for SEO optimization checking.",
+    )
+
+    reference_docs: list[str] = Field(
+        default=[],
+        description="Reference source documents to check for plagiarism.",
+    )

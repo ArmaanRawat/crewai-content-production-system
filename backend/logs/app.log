@@ -1,0 +1,168 @@
+2026-05-26 10:50:23 | INFO     | main:48 | App started
+2026-05-26 10:50:23 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:50:23 | INFO     | api.routes:57 | Job started
+2026-05-26 10:50:23 | INFO     | api.routes:80 | Job complete
+2026-05-26 10:50:23 | INFO     | logging:1736 | HTTP Request: POST http://testserver/api/v1/generate "HTTP/1.1 200 OK"
+2026-05-26 10:50:23 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:50:23 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/docs "HTTP/1.1 200 OK"
+2026-05-26 10:50:23 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:50:23 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs/non_existent_id "HTTP/1.1 404 Not Found"
+2026-05-26 10:50:23 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:50:23 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs/job_abc "HTTP/1.1 200 OK"
+2026-05-26 10:50:23 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:50:23 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/health "HTTP/1.1 200 OK"
+2026-05-26 10:50:23 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:50:23 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs "HTTP/1.1 200 OK"
+2026-05-26 10:50:23 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | main:48 | App started
+2026-05-26 10:57:44 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | api.routes:57 | Job started
+2026-05-26 10:57:44 | INFO     | api.routes:80 | Job complete
+2026-05-26 10:57:44 | INFO     | logging:1736 | HTTP Request: POST http://testserver/api/v1/generate "HTTP/1.1 200 OK"
+2026-05-26 10:57:44 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/docs "HTTP/1.1 200 OK"
+2026-05-26 10:57:44 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs/non_existent_id "HTTP/1.1 404 Not Found"
+2026-05-26 10:57:44 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs/job_abc "HTTP/1.1 200 OK"
+2026-05-26 10:57:44 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/health "HTTP/1.1 200 OK"
+2026-05-26 10:57:44 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs "HTTP/1.1 200 OK"
+2026-05-26 10:57:44 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/logs/stream "HTTP/1.1 200 OK"
+2026-05-26 10:57:44 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:57:44 | INFO     | logging:1736 | HTTP Request: POST http://testserver/api/v1/docs/generate "HTTP/1.1 200 OK"
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:104 | Grammar check complete
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:104 | Grammar check complete
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-05-26 10:57:44 | INFO     | tools.grammar_tool:104 | Grammar check complete
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:83 | Checking for plagiarism
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:113 | Encoding input sentences
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:116 | Encoding reference sentences
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:149 | Plagiarism check complete
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:83 | Checking for plagiarism
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:113 | Encoding input sentences
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:116 | Encoding reference sentences
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:149 | Plagiarism check complete
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-05-26 10:57:44 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:131 | Plagiarism check skipped: no reference documents provided
+2026-05-26 10:57:44 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-05-26 10:57:44 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-05-26 10:57:44 | INFO     | tools.tavily_tool:76 | TavilySearchTool initialized
+2026-05-26 10:57:44 | INFO     | tools.tavily_tool:76 | TavilySearchTool initialized
+2026-05-26 10:57:44 | INFO     | tools.tavily_tool:95 | Searching Tavily
+2026-05-26 10:57:44 | INFO     | tools.tavily_tool:122 | Tavily search complete
+2026-05-26 10:58:37 | INFO     | main:48 | App started
+2026-05-26 10:58:37 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:58:37 | INFO     | api.routes:57 | Job started
+2026-05-26 10:58:37 | INFO     | api.routes:80 | Job complete
+2026-05-26 10:58:37 | INFO     | logging:1736 | HTTP Request: POST http://testserver/api/v1/generate "HTTP/1.1 200 OK"
+2026-05-26 10:58:37 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:58:37 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/docs "HTTP/1.1 200 OK"
+2026-05-26 10:58:37 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:58:37 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs/non_existent_id "HTTP/1.1 404 Not Found"
+2026-05-26 10:58:37 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:58:37 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs/job_abc "HTTP/1.1 200 OK"
+2026-05-26 10:58:37 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:58:37 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/health "HTTP/1.1 200 OK"
+2026-05-26 10:58:37 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:58:37 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/jobs "HTTP/1.1 200 OK"
+2026-05-26 10:58:37 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:58:37 | INFO     | logging:1736 | HTTP Request: GET http://testserver/api/v1/logs/stream "HTTP/1.1 200 OK"
+2026-05-26 10:58:37 | DEBUG    | logging:1736 | Using proactor: IocpProactor
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:58:37 | INFO     | logging:1736 | HTTP Request: POST http://testserver/api/v1/docs/generate "HTTP/1.1 200 OK"
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:104 | Grammar check complete
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:104 | Grammar check complete
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-05-26 10:58:37 | INFO     | tools.grammar_tool:104 | Grammar check complete
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:83 | Checking for plagiarism
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:113 | Encoding input sentences
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:116 | Encoding reference sentences
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:149 | Plagiarism check complete
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:83 | Checking for plagiarism
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:113 | Encoding input sentences
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:116 | Encoding reference sentences
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:149 | Plagiarism check complete
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-05-26 10:58:37 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:131 | Plagiarism check skipped: no reference documents provided
+2026-05-26 10:58:37 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-05-26 10:58:37 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-05-26 10:58:37 | INFO     | tools.tavily_tool:76 | TavilySearchTool initialized
+2026-05-26 10:58:37 | INFO     | tools.tavily_tool:76 | TavilySearchTool initialized
+2026-05-26 10:58:37 | INFO     | tools.tavily_tool:95 | Searching Tavily
+2026-05-26 10:58:37 | INFO     | tools.tavily_tool:122 | Tavily search complete
