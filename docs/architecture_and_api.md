@@ -25,11 +25,11 @@ These tools are used for content research, formatting, and validation checks:
 **Description:**
 Wrapper around the Tavily Search API.
 
-Usage:
-    tool = TavilySearchTool()
-    response = tool.search("latest trends in renewable energy")
-    for result in response.results:
-        print(result.title, result.url)
+    Usage:
+        tool = TavilySearchTool()
+        response = tool.search("latest trends in renewable energy")
+        for result in response.results:
+            print(result.title, result.url)
 
 ### `GrammarCheckTool`
 
@@ -37,7 +37,7 @@ Usage:
 
 **Description:**
 Programmatic wrapper around the LanguageTool API.
-Used for direct queries and quality gate scoring.
+    Used for direct queries and quality gate scoring.
 
 ### `CrewAIGrammarCheckTool`
 
@@ -45,7 +45,7 @@ Used for direct queries and quality gate scoring.
 
 **Description:**
 CrewAI agent tool wrapper. Exposes a text description and string-based report
-suitable for agent ingestion (e.g. Editor Agent).
+    suitable for agent ingestion (e.g. Editor Agent).
 
 ### `SEOKeywordAnalyzer`
 
@@ -67,7 +67,7 @@ CrewAI agent tool wrapper. Allows agents to run SEO checks and get recommendatio
 
 **Description:**
 Programmatic plagiarism detector comparing text against reference documents
-semantically using SentenceTransformers.
+    semantically using SentenceTransformers.
 
 ### `CrewAIPlagiarismTool`
 

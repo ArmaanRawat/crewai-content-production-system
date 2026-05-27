@@ -6,6 +6,7 @@ FastAPI application entry point.
 """
 
 import os
+import logging
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
@@ -13,7 +14,14 @@ from utils.logger import setup_logging, get_logger
 from api.routes import router
 
 load_dotenv()
-setup_logging(os.getenv("LOG_LEVEL", "DEBUG"))
+
+# ── Silence noisy third-party debug loggers ───────────────────────────────────
+logging.getLogger("LiteLLM").setLevel(logging.WARNING)
+logging.getLogger("httpx").setLevel(logging.WARNING)
+logging.getLogger("httpcore").setLevel(logging.WARNING)
+logging.getLogger("openai").setLevel(logging.WARNING)
+
+setup_logging(os.getenv("LOG_LEVEL", "INFO"))
 logger = get_logger(__name__)
 
 app = FastAPI(
@@ -35,7 +43,7 @@ app.include_router(router, prefix="/api/v1")
 @app.on_event("startup")
 def startup_event():
     """
-    Runs startup processes including automated technical documentation generation.
+    Runs on server startup.
     """
     logger.info("Server startup: auto-generating technical documentation")
     try:
@@ -44,5 +52,4 @@ def startup_event():
     except Exception as e:
         logger.error(f"Failed to auto-generate technical documentation: {e}")
 
-
-logger.info("App started", host="0.0.0.0", port=8000)
+    logger.info("App started", host="0.0.0.0", port=8000)
