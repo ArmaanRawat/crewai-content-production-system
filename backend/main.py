@@ -12,6 +12,9 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from utils.logger import setup_logging, get_logger
 from api.routes import router
+from api.feedback_routes import router as feedback_router
+from api.translation_routes import router as translation_router
+from api.calender_routes import router as calendar_router
 
 load_dotenv()
 
@@ -38,6 +41,9 @@ app.add_middleware(
 )
 
 app.include_router(router, prefix="/api/v1")
+app.include_router(feedback_router, prefix="/api/v1/feedback")
+app.include_router(translation_router, prefix="/api/v1/translation")
+app.include_router(calendar_router, prefix="/api/v1/calendar")
 
 
 @app.on_event("startup")

@@ -7904,3 +7904,144 @@ httpx.ConnectError: [Errno 8] nodename nor servname provided, or not known
 2026-05-27 13:56:01 | INFO     | logging:1762 | Waiting for connections to close. (CTRL+C to force quit)
 2026-05-27 13:56:59 | INFO     | logging:1762 | Finished server process [91847]
 2026-05-27 13:56:59 | INFO     | logging:1762 | Stopping reloader process [91826]
+2026-06-01 14:27:44 | INFO     | logging:1762 | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-06-01 14:27:44 | INFO     | logging:1762 | Started reloader process [28305] using WatchFiles
+2026-06-01 14:27:51 | INFO     | logging:1762 | Started server process [28374]
+2026-06-01 14:27:51 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-01 14:27:51 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-01 14:27:51 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 14:27:51 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 14:27:51 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 14:27:51 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 14:27:51 | INFO     | main:55 | App started
+2026-06-01 14:27:51 | INFO     | logging:1762 | Application startup complete.
+2026-06-01 14:28:24 | INFO     | logging:1762 | Shutting down
+2026-06-01 14:28:24 | INFO     | logging:1762 | Waiting for application shutdown.
+2026-06-01 14:28:24 | INFO     | logging:1762 | Application shutdown complete.
+2026-06-01 14:28:24 | INFO     | logging:1762 | Finished server process [28374]
+2026-06-01 14:28:24 | INFO     | logging:1762 | Stopping reloader process [28305]
+2026-06-01 14:28:37 | INFO     | logging:1762 | Started server process [28703]
+2026-06-01 14:28:37 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-01 14:28:37 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-01 14:28:37 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 14:28:37 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 14:28:37 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 14:28:37 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 14:28:37 | INFO     | main:55 | App started
+2026-06-01 14:28:37 | INFO     | logging:1762 | Application startup complete.
+2026-06-01 14:28:37 | INFO     | logging:1762 | Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+2026-06-01 14:30:44 | INFO     | logging:1762 | 127.0.0.1:51022 - "GET / HTTP/1.1" 404
+2026-06-01 14:30:44 | INFO     | logging:1762 | 127.0.0.1:51032 - "GET /favicon.ico HTTP/1.1" 404
+2026-06-01 14:30:55 | INFO     | logging:1762 | Shutting down
+2026-06-01 14:30:55 | INFO     | logging:1762 | Waiting for application shutdown.
+2026-06-01 14:30:55 | INFO     | logging:1762 | Application shutdown complete.
+2026-06-01 14:30:55 | INFO     | logging:1762 | Finished server process [28703]
+2026-06-01 14:32:38 | INFO     | logging:1762 | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-06-01 14:32:38 | INFO     | logging:1762 | Started reloader process [30480] using WatchFiles
+2026-06-01 14:32:45 | INFO     | logging:1762 | Started server process [30538]
+2026-06-01 14:32:45 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-01 14:32:45 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-01 14:32:45 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 14:32:45 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 14:32:45 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 14:32:45 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 14:32:45 | INFO     | main:55 | App started
+2026-06-01 14:32:45 | INFO     | logging:1762 | Application startup complete.
+2026-06-01 14:33:08 | INFO     | logging:1762 | 127.0.0.1:59394 - "GET /docs HTTP/1.1" 200
+2026-06-01 14:33:08 | INFO     | logging:1762 | 127.0.0.1:59394 - "GET /openapi.json HTTP/1.1" 200
+2026-06-01 14:49:38 | WARNING  | logging:1762 | WatchFiles detected changes in 'api/calender_routes.py', 'api/translation_routes.py', 'api/feedback_routes.py'. Reloading...
+2026-06-01 14:49:38 | INFO     | logging:1762 | Shutting down
+2026-06-01 14:49:38 | INFO     | logging:1762 | Waiting for application shutdown.
+2026-06-01 14:49:38 | INFO     | logging:1762 | Application shutdown complete.
+2026-06-01 14:49:38 | INFO     | logging:1762 | Finished server process [30538]
+2026-06-01 14:49:47 | INFO     | logging:1762 | Started server process [38867]
+2026-06-01 14:49:47 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-01 14:49:47 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-01 14:49:47 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 14:49:47 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 14:49:47 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 14:49:47 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 14:49:47 | INFO     | main:55 | App started
+2026-06-01 14:49:47 | INFO     | logging:1762 | Application startup complete.
+2026-06-01 14:54:45 | WARNING  | logging:1762 | WatchFiles detected changes in 'agents/translation_agent.py'. Reloading...
+2026-06-01 14:54:46 | INFO     | logging:1762 | Shutting down
+2026-06-01 14:54:46 | INFO     | logging:1762 | Waiting for application shutdown.
+2026-06-01 14:54:46 | INFO     | logging:1762 | Application shutdown complete.
+2026-06-01 14:54:46 | INFO     | logging:1762 | Finished server process [38867]
+2026-06-01 14:54:54 | INFO     | logging:1762 | Started server process [41537]
+2026-06-01 14:54:54 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-01 14:54:54 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-01 14:54:54 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 14:54:54 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 14:54:54 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 14:54:54 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 14:54:54 | INFO     | main:55 | App started
+2026-06-01 14:54:54 | INFO     | logging:1762 | Application startup complete.
+2026-06-01 14:55:31 | WARNING  | logging:1762 | WatchFiles detected changes in 'agents/translation_agent.py'. Reloading...
+2026-06-01 14:55:31 | INFO     | logging:1762 | Shutting down
+2026-06-01 14:55:32 | INFO     | logging:1762 | Waiting for application shutdown.
+2026-06-01 14:55:32 | INFO     | logging:1762 | Application shutdown complete.
+2026-06-01 14:55:32 | INFO     | logging:1762 | Finished server process [41537]
+2026-06-01 14:55:38 | INFO     | logging:1762 | Started server process [41905]
+2026-06-01 14:55:38 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-01 14:55:38 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-01 14:55:38 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 14:55:38 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 14:55:38 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 14:55:38 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 14:55:38 | INFO     | main:55 | App started
+2026-06-01 14:55:38 | INFO     | logging:1762 | Application startup complete.
+2026-06-01 16:29:23 | INFO     | api.routes:81 | Job started
+2026-06-01 16:29:23 | INFO     | logging:1762 | 127.0.0.1:39992 - "POST /api/v1/generate HTTP/1.1" 200
+2026-06-01 16:29:23 | INFO     | crews.content_crew:66 | Running Content Crew
+2026-06-01 16:29:23 | INFO     | crews.content_crew:25 | Building Content Crew
+2026-06-01 16:29:23 | INFO     | agents.researcher_agent:48 | Building Researcher Agent
+2026-06-01 16:29:23 | INFO     | agents.researcher_agent:90 | Researcher Agent built successfully
+2026-06-01 16:29:23 | INFO     | agents.writer_agent:28 | Building Writer Agent
+2026-06-01 16:29:23 | INFO     | agents.writer_agent:57 | Writer Agent built successfully
+2026-06-01 16:29:23 | INFO     | agents.editor_agent:28 | Building Editor Agent
+2026-06-01 16:29:23 | INFO     | agents.editor_agent:58 | Editor Agent built successfully
+2026-06-01 16:29:23 | INFO     | agents.seo_agent:29 | Building SEO Agent
+2026-06-01 16:29:23 | INFO     | agents.seo_agent:59 | SEO Agent built successfully
+2026-06-01 16:29:23 | INFO     | agents.fact_checker_agent:29 | Building Fact Checker Agent
+2026-06-01 16:29:23 | INFO     | agents.fact_checker_agent:62 | Fact Checker Agent built successfully
+2026-06-01 16:29:23 | INFO     | crews.content_crew:51 | Content Crew built successfully
+2026-06-01 16:29:24 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-01 16:29:29 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-01 16:30:07 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 676, 'completion_tokens': 820, 'total_tokens': 1496, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 16:30:44 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 1092, 'completion_tokens': 1332, 'total_tokens': 2424, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 16:31:13 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 2442, 'completion_tokens': 1053, 'total_tokens': 3495, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 16:32:37 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 3543, 'completion_tokens': 1402, 'total_tokens': 4945, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 16:32:37 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-01 16:33:59 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-01 16:35:26 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 5518, 'completion_tokens': 1365, 'total_tokens': 6883, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 16:35:26 | INFO     | crews.content_crew:71 | Content Crew finished
+2026-06-01 16:35:26 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 16:35:26 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 16:35:26 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 16:35:26 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 16:35:26 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-06-01 16:35:26 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-06-01 16:35:29 | INFO     | tools.grammar_tool:104 | Grammar check complete
+2026-06-01 16:35:29 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-06-01 16:35:29 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-06-01 16:35:29 | INFO     | utils.quality_gate:131 | Plagiarism check skipped: no reference documents provided
+2026-06-01 16:35:29 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-06-01 16:35:29 | INFO     | api.routes:55 | Job complete
+2026-06-01 17:46:54 | INFO     | logging:1762 | Shutting down
+2026-06-01 17:46:54 | INFO     | logging:1762 | Waiting for application shutdown.
+2026-06-01 17:46:54 | INFO     | logging:1762 | Application shutdown complete.
+2026-06-01 17:46:54 | INFO     | logging:1762 | Finished server process [41905]
+2026-06-01 17:46:55 | INFO     | logging:1762 | Stopping reloader process [30480]
+2026-06-02 08:37:02 | INFO     | api.feedback_routes:94 | Feedback job started
+2026-06-02 08:37:02 | INFO     | api.feedback_routes:49 | Feedback job complete
+2026-06-02 08:37:02 | INFO     | api.translation_routes:129 | Translation job started
+2026-06-02 08:37:02 | INFO     | api.translation_routes:66 | Translation job complete
+2026-06-02 08:37:02 | INFO     | api.calender_routes:71 | Calendar job started
+2026-06-02 08:37:02 | INFO     | api.calender_routes:45 | Calendar job complete
+2026-06-02 08:37:30 | INFO     | api.feedback_routes:94 | Feedback job started
+2026-06-02 08:37:30 | INFO     | api.feedback_routes:49 | Feedback job complete
+2026-06-02 08:37:30 | INFO     | api.translation_routes:129 | Translation job started
+2026-06-02 08:37:30 | INFO     | api.translation_routes:66 | Translation job complete
+2026-06-02 08:37:30 | INFO     | api.calender_routes:71 | Calendar job started
+2026-06-02 08:37:30 | INFO     | api.calender_routes:45 | Calendar job complete

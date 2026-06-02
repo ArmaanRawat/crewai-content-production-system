@@ -13,6 +13,8 @@
 - [Getting Started](#getting-started)
 - [What's Built (Phase 1)](#whats-built-phase-1)
 - [API Reference](#api-reference)
+- [Extended Features & APIs](#extended-features--apis)
+- [Running Tests](#running-tests)
 - [Environment Variables](#environment-variables)
 - [Development Workflow](#development-workflow)
 - [TODO / Remaining Work](#todo--remaining-work)
@@ -255,6 +257,164 @@ Submit a content brief to run the pipeline.
 ```json
 { "status": "ok" }
 ```
+
+---
+
+## Extended Features & APIs
+
+The following APIs extend the core content generation pipeline with feedback, translation, calendar, and benchmarking capabilities (developed by Arya Gupta).
+
+### Client Feedback API (US-19)
+
+Allows clients to submit feedback on an existing article and trigger a revision run.
+
+#### POST `/api/v1/feedback/submit`
+
+Submit feedback to revise an existing article.
+
+**Request body:**
+```json
+{
+  "job_id": "job_xxx",
+  "feedback": "Make the intro more engaging and add more statistics"
+}
+```
+
+**Response:**
+```json
+{
+  "feedback_job_id": "job_yyy",
+  "status": "running",
+  "original_job_id": "job_xxx",
+  "created_at": "2026-06-02T10:00:00Z"
+}
+```
+
+#### GET `/api/v1/feedback/jobs/{job_id}`
+
+Get the status of a feedback revision job.
+
+---
+
+### Multilingual Translation API (US-20)
+
+Translate an existing article into another language using an AI translation agent.
+
+#### POST `/api/v1/translation/submit`
+
+Submit a translation request for an existing article.
+
+**Request body:**
+```json
+{
+  "job_id": "job_xxx",
+  "target_language": "Spanish"
+}
+```
+
+**Supported languages:**
+Spanish, French, German, Italian, Portuguese, Chinese, Japanese, Korean, Arabic, Hindi, Dutch, Russian, Turkish, Polish, Swedish
+
+**Response:**
+```json
+{
+  "translation_job_id": "job_yyy",
+  "status": "running",
+  "target_language": "Spanish",
+  "created_at": "2026-06-02T10:00:00Z"
+}
+```
+
+#### GET `/api/v1/translation/jobs/{job_id}`
+
+Get the status and result of a translation job.
+
+#### GET `/api/v1/translation/languages`
+
+List all supported target languages.
+
+---
+
+### Content Calendar API (US-21)
+
+Generate a structured content calendar for a given niche and audience.
+
+#### POST `/api/v1/calendar/generate`
+
+Generate a content calendar.
+
+**Request body:**
+```json
+{
+  "niche": "Tech Startups",
+  "audience": "founders",
+  "frequency": "weekly",
+  "weeks": 4
+}
+```
+
+**Response:**
+```json
+{
+  "calendar_job_id": "job_yyy",
+  "status": "running",
+  "niche": "Tech Startups",
+  "weeks": 4,
+  "created_at": "2026-06-02T10:00:00Z"
+}
+```
+
+#### GET `/api/v1/calendar/jobs/{job_id}`
+
+Get the status and result of a calendar generation job.
+
+---
+
+### Human Evaluation Benchmark (US-18)
+
+A benchmark harness that generates and evaluates articles across diverse topics, measuring quality, grammar, SEO performance, and generation time.
+
+**Run the benchmark:**
+```bash
+cd backend
+python -m utils.benchmark
+```
+
+The benchmark generates 3 articles on diverse topics and reports:
+- Quality scores
+- Grammar error counts
+- SEO scores
+- Generation times per article
+
+---
+
+## Running Tests
+
+Navigate to the backend directory and run the test suite:
+
+```bash
+cd backend
+python -m pytest tests/ -v
+```
+
+Alternatively, using unittest discovery:
+```bash
+python -m unittest discover tests/
+```
+
+**Test modules:**
+
+| Module | Coverage |
+|--------|----------|
+| `test_api.py` | API route validation and responses |
+| `test_e2e.py` | End-to-end pipeline tests |
+| `test_quality_gate.py` | Quality gate pass/fail logic |
+| `test_seo.py` | SEO scoring and keyword analysis |
+| `test_grammar.py` | Grammar checking tool |
+| `test_plagiarism.py` | Plagiarism detection tool |
+| `test_tavily.py` | Tavily search integration |
+| `test_job_store.py` | Job storage and retrieval |
+| `test_doc_generator.py` | Document generation utilities |
 
 ---
 
