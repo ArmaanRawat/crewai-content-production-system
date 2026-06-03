@@ -7904,3 +7904,740 @@ httpx.ConnectError: [Errno 8] nodename nor servname provided, or not known
 2026-05-27 13:56:01 | INFO     | logging:1762 | Waiting for connections to close. (CTRL+C to force quit)
 2026-05-27 13:56:59 | INFO     | logging:1762 | Finished server process [91847]
 2026-05-27 13:56:59 | INFO     | logging:1762 | Stopping reloader process [91826]
+2026-06-01 11:46:37 | INFO     | logging:1762 | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-06-01 11:46:37 | INFO     | logging:1762 | Started reloader process [17747] using WatchFiles
+2026-06-01 11:46:44 | INFO     | logging:1762 | Started server process [17848]
+2026-06-01 11:46:44 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-01 11:46:44 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-01 11:46:44 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 11:46:44 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 11:46:44 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 11:46:44 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 11:46:44 | INFO     | main:55 | App started
+2026-06-01 11:46:44 | INFO     | logging:1762 | Application startup complete.
+2026-06-01 11:46:50 | INFO     | logging:1762 | 127.0.0.1:57366 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:46:50 | INFO     | logging:1762 | 127.0.0.1:57367 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:46:50 | INFO     | logging:1762 | 127.0.0.1:57366 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:46:50 | INFO     | logging:1762 | 127.0.0.1:57369 - "GET /api/v1/logs/stream HTTP/1.1" 200
+2026-06-01 11:46:50 | INFO     | logging:1762 | 127.0.0.1:57367 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:46:59 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:46:59 | INFO     | logging:1762 | 127.0.0.1:57379 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:46:59 | INFO     | logging:1762 | 127.0.0.1:57380 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:46:59 | INFO     | logging:1762 | 127.0.0.1:57381 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:46:59 | INFO     | logging:1762 | 127.0.0.1:57382 - "GET /api/v1/logs/stream HTTP/1.1" 200
+2026-06-01 11:47:02 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:05 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:08 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:09 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:47:11 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:14 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:17 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:19 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:47:20 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:23 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:26 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:29 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:47:29 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:32 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:36 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:39 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:39 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:47:42 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:45 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:48 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:49 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:47:51 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:54 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:54 | INFO     | logging:1762 | 127.0.0.1:57378 - "OPTIONS /api/v1/generate HTTP/1.1" 200
+2026-06-01 11:47:54 | INFO     | api.routes:81 | Job started
+2026-06-01 11:47:54 | INFO     | logging:1762 | 127.0.0.1:57378 - "POST /api/v1/generate HTTP/1.1" 200
+2026-06-01 11:47:54 | INFO     | crews.content_crew:66 | Running Content Crew
+2026-06-01 11:47:54 | INFO     | crews.content_crew:25 | Building Content Crew
+2026-06-01 11:47:54 | INFO     | agents.researcher_agent:48 | Building Researcher Agent
+2026-06-01 11:47:54 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:54 | INFO     | agents.researcher_agent:90 | Researcher Agent built successfully
+2026-06-01 11:47:54 | INFO     | agents.writer_agent:28 | Building Writer Agent
+2026-06-01 11:47:54 | INFO     | agents.writer_agent:57 | Writer Agent built successfully
+2026-06-01 11:47:54 | INFO     | agents.editor_agent:28 | Building Editor Agent
+2026-06-01 11:47:54 | INFO     | agents.editor_agent:58 | Editor Agent built successfully
+2026-06-01 11:47:54 | INFO     | agents.seo_agent:29 | Building SEO Agent
+2026-06-01 11:47:54 | INFO     | agents.seo_agent:59 | SEO Agent built successfully
+2026-06-01 11:47:54 | INFO     | agents.fact_checker_agent:29 | Building Fact Checker Agent
+2026-06-01 11:47:54 | INFO     | agents.fact_checker_agent:62 | Fact Checker Agent built successfully
+2026-06-01 11:47:54 | INFO     | crews.content_crew:51 | Content Crew built successfully
+2026-06-01 11:47:55 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-01 11:47:57 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:47:59 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-01 11:47:59 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:48:00 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:03 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:06 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:09 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:09 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:48:13 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:17 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:19 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:48:20 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:20 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 1867, 'completion_tokens': 667, 'total_tokens': 2534, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 11:48:23 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:26 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:29 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:29 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:48:32 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:35 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:38 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:39 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:48:41 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:44 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:47 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:49 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:48:50 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:53 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:56 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:59 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:48:59 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 938, 'completion_tokens': 1233, 'total_tokens': 2171, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 11:48:59 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:49:02 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:05 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:08 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:09 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:49:11 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:14 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:17 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:19 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:49:20 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:23 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:26 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:26 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 2190, 'completion_tokens': 864, 'total_tokens': 3054, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 11:49:29 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:29 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:49:32 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:35 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:38 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:39 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:49:41 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:44 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:47 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:49 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:49:50 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:53 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:56 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:59 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:49:59 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:50:02 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:05 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:07 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 3104, 'completion_tokens': 1095, 'total_tokens': 4199, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 11:50:07 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-01 11:50:08 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:09 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:50:11 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:14 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:15 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-01 11:50:17 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:19 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:50:20 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:23 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:26 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:29 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:29 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:50:32 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:35 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:38 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:39 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:50:41 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:44 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:47 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:49 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:50:50 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:54 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:50:58 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:00 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:51:02 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:06 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:10 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:11 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:51:14 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:18 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:22 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:51:22 | INFO     | logging:1762 | 127.0.0.1:57433 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:26 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:31 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:33 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:51:35 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:38 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:41 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:43 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:51:46 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:51:49 | INFO     | logging:1762 | 127.0.0.1:57378 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:00 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:52:00 | INFO     | logging:1762 | 127.0.0.1:57437 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:03 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:06 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:09 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:10 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:52:12 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:15 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:19 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:20 | INFO     | logging:1762 | 127.0.0.1:57436 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:52:26 | INFO     | logging:1762 | 127.0.0.1:57482 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:49 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:52:49 | INFO     | logging:1762 | 127.0.0.1:57489 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:52 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:55 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:58 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:52:59 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:53:01 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:04 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:07 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:09 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:53:10 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:13 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:16 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:19 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:53:19 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:22 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:25 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:28 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:29 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:53:32 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:36 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:40 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:53:40 | INFO     | logging:1762 | 127.0.0.1:57500 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:44 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:48 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:50 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:53:51 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:54 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:53:57 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:00 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:54:01 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:04 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:07 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:10 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:10 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:54:13 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:14 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 5947, 'completion_tokens': 5920, 'total_tokens': 11867, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-01 11:54:14 | INFO     | crews.content_crew:71 | Content Crew finished
+2026-06-01 11:54:14 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-01 11:54:14 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-01 11:54:14 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-01 11:54:14 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-01 11:54:14 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-06-01 11:54:14 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-06-01 11:54:15 | ERROR    | tools.grammar_tool:114 | Grammar check failed
+2026-06-01 11:54:15 | ERROR    | utils.quality_gate:85 | Grammar check failed in quality gate
+2026-06-01 11:54:15 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-06-01 11:54:15 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-06-01 11:54:15 | INFO     | utils.quality_gate:131 | Plagiarism check skipped: no reference documents provided
+2026-06-01 11:54:15 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-06-01 11:54:15 | INFO     | api.routes:55 | Job complete
+2026-06-01 11:54:16 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:20 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:54:21 | INFO     | logging:1762 | 127.0.0.1:57488 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:30 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:30 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:54:33 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:36 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:39 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:40 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:54:42 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:45 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:48 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:50 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:54:51 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:54 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:54:57 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:00 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:00 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:55:04 | INFO     | logging:1762 | 127.0.0.1:57504 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:09 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:11 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:55:12 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:15 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:19 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:21 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:55:23 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:26 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:29 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:31 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:55:32 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:35 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:38 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:41 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 11:55:41 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:55:44 | INFO     | logging:1762 | 127.0.0.1:57511 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:56:33 | INFO     | logging:1762 | 127.0.0.1:57527 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 11:56:33 | INFO     | logging:1762 | 127.0.0.1:57528 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 12:08:42 | INFO     | logging:1762 | 127.0.0.1:57602 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 12:08:42 | INFO     | logging:1762 | 127.0.0.1:57603 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-01 12:08:45 | INFO     | logging:1762 | 127.0.0.1:57602 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 12:08:48 | INFO     | logging:1762 | 127.0.0.1:57602 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-01 12:08:51 | INFO     | logging:1762 | Shutting down
+2026-06-01 12:08:51 | INFO     | logging:1762 | Waiting for connections to close. (CTRL+C to force quit)
+2026-06-01 18:41:14 | INFO     | logging:1762 | Waiting for background tasks to complete. (CTRL+C to force quit)
+2026-06-01 18:41:14 | INFO     | logging:1762 | Waiting for application shutdown.
+2026-06-01 18:41:14 | INFO     | logging:1762 | Application shutdown complete.
+2026-06-01 18:41:14 | INFO     | logging:1762 | Finished server process [17848]
+2026-06-01 18:41:14 | INFO     | logging:1762 | Stopping reloader process [17747]
+2026-06-02 10:15:14 | INFO     | logging:1762 | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-06-02 10:15:14 | INFO     | logging:1762 | Started reloader process [25769] using WatchFiles
+2026-06-02 10:15:32 | INFO     | logging:1762 | Started server process [25851]
+2026-06-02 10:15:32 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-02 10:15:32 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-02 10:15:32 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-02 10:15:32 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-02 10:15:32 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-02 10:15:32 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-02 10:15:32 | INFO     | main:55 | App started
+2026-06-02 10:15:32 | INFO     | logging:1762 | Application startup complete.
+2026-06-02 10:15:32 | INFO     | logging:1762 | 127.0.0.1:64631 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:32 | INFO     | logging:1762 | 127.0.0.1:64631 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:15:32 | INFO     | logging:1762 | 127.0.0.1:64633 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:32 | INFO     | logging:1762 | 127.0.0.1:64631 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:32 | INFO     | logging:1762 | 127.0.0.1:64633 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:32 | INFO     | logging:1762 | 127.0.0.1:64633 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:33 | INFO     | logging:1762 | 127.0.0.1:64633 - "GET /api/v1/logs/stream HTTP/1.1" 200
+2026-06-02 10:15:35 | INFO     | logging:1762 | 127.0.0.1:64631 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:15:35 | INFO     | logging:1762 | 127.0.0.1:64625 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:35 | INFO     | logging:1762 | 127.0.0.1:64639 - "GET /api/v1/logs/stream HTTP/1.1" 200
+2026-06-02 10:15:35 | INFO     | logging:1762 | 127.0.0.1:64631 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:35 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:15:38 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:41 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:42 | INFO     | logging:1762 | 127.0.0.1:64641 - "OPTIONS /api/v1/generate HTTP/1.1" 200
+2026-06-02 10:15:42 | INFO     | api.routes:81 | Job started
+2026-06-02 10:15:42 | INFO     | logging:1762 | 127.0.0.1:64641 - "POST /api/v1/generate HTTP/1.1" 200
+2026-06-02 10:15:42 | INFO     | crews.content_crew:66 | Running Content Crew
+2026-06-02 10:15:42 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:42 | INFO     | crews.content_crew:25 | Building Content Crew
+2026-06-02 10:15:42 | INFO     | agents.researcher_agent:48 | Building Researcher Agent
+2026-06-02 10:15:42 | INFO     | agents.researcher_agent:90 | Researcher Agent built successfully
+2026-06-02 10:15:42 | INFO     | agents.writer_agent:28 | Building Writer Agent
+2026-06-02 10:15:42 | INFO     | agents.writer_agent:57 | Writer Agent built successfully
+2026-06-02 10:15:42 | INFO     | agents.editor_agent:28 | Building Editor Agent
+2026-06-02 10:15:42 | INFO     | agents.editor_agent:58 | Editor Agent built successfully
+2026-06-02 10:15:42 | INFO     | agents.seo_agent:29 | Building SEO Agent
+2026-06-02 10:15:42 | INFO     | agents.seo_agent:59 | SEO Agent built successfully
+2026-06-02 10:15:42 | INFO     | agents.fact_checker_agent:29 | Building Fact Checker Agent
+2026-06-02 10:15:42 | INFO     | agents.fact_checker_agent:62 | Fact Checker Agent built successfully
+2026-06-02 10:15:42 | INFO     | crews.content_crew:51 | Content Crew built successfully
+2026-06-02 10:15:42 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-02 10:15:44 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:45 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:15:47 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:50 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:53 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:55 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:15:56 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:15:56 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-02 10:15:59 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:02 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:05 | INFO     | logging:1762 | 127.0.0.1:64641 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:16:05 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:08 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:11 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:14 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:15 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:16:16 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 1618, 'completion_tokens': 546, 'total_tokens': 2164, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-02 10:16:17 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:20 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:23 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:25 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:16:26 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:29 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:32 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:35 | INFO     | logging:1762 | 127.0.0.1:64653 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:16:35 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:38 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 824, 'completion_tokens': 781, 'total_tokens': 1605, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-02 10:16:38 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:41 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:44 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:45 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:16:47 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:50 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:53 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:55 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:16:56 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:16:57 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 1623, 'completion_tokens': 700, 'total_tokens': 2323, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-02 10:16:59 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:02 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:05 | INFO     | logging:1762 | 127.0.0.1:64667 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:17:05 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:08 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:11 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:14 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:15 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:17:17 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:19 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 2379, 'completion_tokens': 665, 'total_tokens': 3044, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-02 10:17:19 | INFO     | logging:1762 | OpenAI: Successfully validated tool 'tavily_search'
+2026-06-02 10:17:20 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:23 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:25 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:17:26 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:29 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:32 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:35 | INFO     | logging:1762 | 127.0.0.1:64680 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:17:35 | INFO     | logging:1762 | 127.0.0.1:64684 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:17:43 | INFO     | logging:1762 | OpenAI API usage: {'prompt_tokens': 3343, 'completion_tokens': 750, 'total_tokens': 4093, 'cached_prompt_tokens': 0, 'reasoning_tokens': 0}
+2026-06-02 10:17:43 | INFO     | crews.content_crew:71 | Content Crew finished
+2026-06-02 10:17:44 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-02 10:17:44 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-02 10:17:44 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-02 10:17:44 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-02 10:17:44 | INFO     | utils.quality_gate:70 | Evaluating quality gate
+2026-06-02 10:17:44 | INFO     | tools.grammar_tool:60 | Checking grammar
+2026-06-02 10:17:48 | INFO     | tools.grammar_tool:104 | Grammar check complete
+2026-06-02 10:17:48 | INFO     | tools.seo_tool:51 | Analyzing text for SEO
+2026-06-02 10:17:48 | INFO     | tools.seo_tool:186 | SEO analysis complete
+2026-06-02 10:17:48 | INFO     | utils.quality_gate:131 | Plagiarism check skipped: no reference documents provided
+2026-06-02 10:17:48 | INFO     | utils.quality_gate:151 | Quality gate evaluation finished
+2026-06-02 10:17:48 | INFO     | api.routes:55 | Job complete
+2026-06-02 10:18:06 | INFO     | logging:1762 | 127.0.0.1:64699 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:06 | INFO     | logging:1762 | 127.0.0.1:64701 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:18:13 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:14 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:15 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:18:17 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:20 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:23 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:25 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:18:26 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:29 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:32 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:35 | INFO     | logging:1762 | 127.0.0.1:64703 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:18:35 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:38 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:41 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:44 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:45 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:18:47 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:50 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:53 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:55 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:18:56 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:18:59 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:02 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:05 | INFO     | logging:1762 | 127.0.0.1:64710 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:19:05 | INFO     | logging:1762 | 127.0.0.1:64801 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:08 | INFO     | logging:1762 | 127.0.0.1:64801 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:11 | INFO     | logging:1762 | 127.0.0.1:64801 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:14 | INFO     | logging:1762 | 127.0.0.1:64801 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:15 | INFO     | logging:1762 | 127.0.0.1:64801 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:19:17 | INFO     | logging:1762 | 127.0.0.1:64801 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:20 | INFO     | logging:1762 | 127.0.0.1:64804 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:23 | INFO     | logging:1762 | 127.0.0.1:64804 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:25 | INFO     | logging:1762 | 127.0.0.1:64804 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:19:26 | INFO     | logging:1762 | 127.0.0.1:64804 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:29 | INFO     | logging:1762 | 127.0.0.1:64804 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:32 | INFO     | logging:1762 | 127.0.0.1:64804 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:35 | INFO     | logging:1762 | 127.0.0.1:64804 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:19:35 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:38 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:41 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:44 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:45 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:19:47 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:50 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:53 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:55 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:19:56 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:19:59 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:02 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:05 | INFO     | logging:1762 | 127.0.0.1:64807 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:20:05 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:08 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:11 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:14 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:15 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:20:17 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:20 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:23 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:25 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:20:26 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:29 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:32 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:35 | INFO     | logging:1762 | 127.0.0.1:64809 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:20:35 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:38 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:41 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:44 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:45 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:20:47 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:50 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:53 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:55 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:20:56 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:20:59 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:02 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:05 | INFO     | logging:1762 | 127.0.0.1:64812 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:21:05 | INFO     | logging:1762 | 127.0.0.1:64820 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:08 | INFO     | logging:1762 | 127.0.0.1:64820 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:11 | INFO     | logging:1762 | 127.0.0.1:64820 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:21 | INFO     | logging:1762 | 127.0.0.1:64822 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:22 | INFO     | logging:1762 | 127.0.0.1:64824 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:21:23 | INFO     | logging:1762 | 127.0.0.1:64824 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:25 | INFO     | logging:1762 | 127.0.0.1:64824 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:21:26 | INFO     | logging:1762 | 127.0.0.1:64824 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:29 | INFO     | logging:1762 | 127.0.0.1:64824 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:32 | INFO     | logging:1762 | 127.0.0.1:64824 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:35 | INFO     | logging:1762 | 127.0.0.1:64824 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:21:35 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:38 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:41 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:44 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:45 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:21:47 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:50 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:53 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:55 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:21:56 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:21:59 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:02 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:05 | INFO     | logging:1762 | 127.0.0.1:64826 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:22:05 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:08 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:11 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:14 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:15 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:22:17 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:20 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:23 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:25 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:22:26 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:29 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:32 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:35 | INFO     | logging:1762 | 127.0.0.1:64829 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:22:35 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:38 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:41 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:44 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:45 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:22:47 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:50 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:53 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:55 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:22:56 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:22:59 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:02 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:05 | INFO     | logging:1762 | 127.0.0.1:64832 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:23:05 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:08 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:11 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:14 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:15 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:23:17 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:20 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:23 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:25 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:23:26 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:29 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:32 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:35 | INFO     | logging:1762 | 127.0.0.1:64847 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:23:35 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:38 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:41 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:44 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:45 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:23:47 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:50 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:53 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:55 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:23:56 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:23:59 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:02 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:05 | INFO     | logging:1762 | 127.0.0.1:64849 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:24:05 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:08 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:11 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:14 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:15 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:24:17 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:20 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:23 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-02 10:24:25 | INFO     | logging:1762 | 127.0.0.1:64865 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-02 10:24:26 | INFO     | logging:1762 | Shutting down
+2026-06-02 10:24:26 | INFO     | logging:1762 | Finished server process [25851]
+2026-06-02 10:24:26 | INFO     | logging:1762 | Stopping reloader process [25769]
+2026-06-03 11:57:04 | INFO     | logging:1762 | Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2026-06-03 11:57:04 | INFO     | logging:1762 | Started reloader process [38756] using WatchFiles
+2026-06-03 11:57:17 | INFO     | logging:1762 | Started server process [39000]
+2026-06-03 11:57:17 | INFO     | logging:1762 | Waiting for application startup.
+2026-06-03 11:57:17 | INFO     | main:48 | Server startup: auto-generating technical documentation
+2026-06-03 11:57:17 | INFO     | tools.grammar_tool:54 | GrammarCheckTool initialized
+2026-06-03 11:57:17 | INFO     | tools.seo_tool:44 | SEOKeywordAnalyzer initialized
+2026-06-03 11:57:17 | INFO     | tools.plagiarism_tool:62 | PlagiarismDetector initialized
+2026-06-03 11:57:17 | INFO     | utils.quality_gate:54 | QualityGate initialized
+2026-06-03 11:57:17 | INFO     | main:55 | App started
+2026-06-03 11:57:17 | INFO     | logging:1762 | Application startup complete.
+2026-06-03 11:58:05 | INFO     | logging:1762 | 127.0.0.1:63767 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:58:05 | INFO     | logging:1762 | 127.0.0.1:63768 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:05 | INFO     | logging:1762 | 127.0.0.1:63767 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:58:05 | INFO     | logging:1762 | 127.0.0.1:63770 - "GET /api/v1/logs/stream HTTP/1.1" 200
+2026-06-03 11:58:05 | INFO     | logging:1762 | 127.0.0.1:63768 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:12 | INFO     | logging:1762 | 127.0.0.1:63783 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:58:12 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:12 | INFO     | logging:1762 | 127.0.0.1:63785 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:58:12 | INFO     | logging:1762 | 127.0.0.1:63786 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:14 | INFO     | logging:1762 | 127.0.0.1:63783 - "GET /api/v1/logs/stream HTTP/1.1" 200
+2026-06-03 11:58:15 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:18 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:21 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:22 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:58:24 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:27 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:30 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:32 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:58:33 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:36 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:39 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:42 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:58:42 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:45 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:48 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:51 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:52 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:58:54 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:58:57 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:00 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:02 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:59:03 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:06 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:09 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:12 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:59:12 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:15 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:19 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:22 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:59:23 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:27 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:31 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:33 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:59:35 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:39 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:43 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:44 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:59:47 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:51 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:55 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 11:59:55 | INFO     | logging:1762 | 127.0.0.1:63789 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 11:59:59 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:02 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:05 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:00:06 | INFO     | logging:1762 | 127.0.0.1:63784 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:11 | INFO     | logging:1762 | 127.0.0.1:63816 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:15 | INFO     | logging:1762 | 127.0.0.1:63816 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:00:18 | INFO     | logging:1762 | 127.0.0.1:63816 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:26 | INFO     | logging:1762 | 127.0.0.1:63831 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:00:37 | INFO     | logging:1762 | 127.0.0.1:63832 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:37 | INFO     | logging:1762 | 127.0.0.1:63833 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:00:43 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:46 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:47 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:00:49 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:53 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:57 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:00:58 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:01:00 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:03 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:06 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:08 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:01:09 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:12 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:15 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:18 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:01:18 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:21 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:24 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:28 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:28 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:01:33 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:36 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:38 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:01:39 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:42 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:45 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:48 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:48 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:01:51 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:54 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:57 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:01:58 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:02:00 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:03 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:06 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:08 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:02:09 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:12 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:15 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:18 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:18 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:02:22 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:26 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:29 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:02:30 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:34 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:38 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:40 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:02:42 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:46 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:50 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:51 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:02:54 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:02:58 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:02 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:03:02 | INFO     | logging:1762 | 127.0.0.1:63881 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:06 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:10 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:13 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:03:14 | INFO     | logging:1762 | 127.0.0.1:63834 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:19 | INFO     | logging:1762 | 127.0.0.1:63882 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:23 | INFO     | logging:1762 | 127.0.0.1:63882 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:23 | INFO     | logging:1762 | 127.0.0.1:63882 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:03:26 | INFO     | logging:1762 | 127.0.0.1:63882 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:30 | INFO     | logging:1762 | 127.0.0.1:63882 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:33 | INFO     | logging:1762 | 127.0.0.1:63882 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:03:35 | INFO     | logging:1762 | 127.0.0.1:63882 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:46 | INFO     | logging:1762 | 127.0.0.1:63937 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:03:46 | INFO     | logging:1762 | 127.0.0.1:63936 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:03:51 | INFO     | logging:1762 | 127.0.0.1:63937 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:04:08 | INFO     | logging:1762 | 127.0.0.1:63938 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:04:08 | INFO     | logging:1762 | 127.0.0.1:63939 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:04:18 | INFO     | logging:1762 | 127.0.0.1:63941 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:04:52 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:04:52 | INFO     | logging:1762 | 127.0.0.1:63961 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:04:55 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:04:58 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:01 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:02 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:05:04 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:07 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:11 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:12 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:05:14 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:17 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:20 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:22 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:05:23 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:26 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:29 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:32 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:32 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:05:36 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:39 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:42 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:05:42 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:46 | INFO     | logging:1762 | 127.0.0.1:63960 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:52 | INFO     | logging:1762 | 127.0.0.1:64026 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:05:53 | INFO     | logging:1762 | 127.0.0.1:64026 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:05:58 | INFO     | logging:1762 | 127.0.0.1:64026 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:06:06 | INFO     | logging:1762 | 127.0.0.1:64030 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:06:06 | INFO     | logging:1762 | 127.0.0.1:64031 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:06:21 | INFO     | logging:1762 | 127.0.0.1:64034 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:06:21 | INFO     | logging:1762 | 127.0.0.1:64035 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:06:43 | INFO     | logging:1762 | 127.0.0.1:64041 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:06:43 | INFO     | logging:1762 | 127.0.0.1:64042 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:07:16 | INFO     | logging:1762 | 127.0.0.1:64056 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:07:16 | INFO     | logging:1762 | 127.0.0.1:64057 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:07:26 | INFO     | logging:1762 | 127.0.0.1:64058 - "GET /api/v1/jobs HTTP/1.1" 200
+2026-06-03 12:08:33 | INFO     | logging:1762 | 127.0.0.1:64078 - "GET /api/v1/health HTTP/1.1" 200
+2026-06-03 12:08:33 | INFO     | logging:1762 | 127.0.0.1:64079 - "GET /api/v1/jobs HTTP/1.1" 200
